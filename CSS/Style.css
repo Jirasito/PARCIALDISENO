@@ -1,0 +1,131 @@
+body {
+    font-family: 'Times New Roman', Times, serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f9f9f9;
+    background-image: url('/Imagenes/Op-02.png'); /* Ruta a tu imagen de fondo */
+    background-size: cover; /* Ajusta la imagen para que cubra todo el fondo */
+    background-position: center; /* Centra la imagen en el fondo */
+    background-repeat: no-repeat; /* Evita que la imagen se repita */
+    min-height: 100vh; /* Asegura que el cuerpo ocupe al menos el 100% del alto de la ventana */
+    height: 100%; /* Altura del cuerpo también al menos el 100% del alto */
+}
+
+header {
+    padding: 20px;
+    text-align: center;
+    background-image: linear-gradient(to right, #6c5dda, #f94880); /* Mezcla de colores */
+    color: white;
+    margin: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+nav {
+    text-align: center;
+    margin-top: 20px;
+    border-bottom: none; /* Quita cualquier borde en la parte inferior */
+}
+
+nav a {
+    color: white;
+    text-decoration: none; /* Quita la línea de subrayado */
+    padding: 10px 20px;
+    background-color: #6c5dda;
+    border-radius: 4px;
+    margin: 0 10px; /* Ajusta el margen entre los enlaces */
+    display: inline-block; /* Asegura que los enlaces se muestren en linea */
+}
+
+nav a:hover {
+    background-color: #3700b3;
+}
+
+main {
+    padding: 20px;
+}
+
+.entrada-tarea {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+input[type="text"] { /* pa que se aplique a todos los elementos input de tipo texto*/
+    width: 70%;
+    padding: 10px;
+    margin-right: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+button.boton-agregar {
+    font-family: 'Times New Roman', Times, serif;
+    padding: 10px 20px;
+    background-color: #6c5dda; /* Mismo color que el encabezado */
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+button.boton-agregar:hover {
+    background-color: #3700b3; /* Color secundario al pasar el raton */
+}
+
+.tareas {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    width: 80%;
+    margin: auto;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+li {
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+li.completada {
+    text-decoration: line-through;
+    color: gray;
+}
+
+li button {
+    font-family: 'Times New Roman', Times, serif;
+    background-color: #e57373;
+    border: none;
+    border-radius: 4px;
+    padding: 5px 10px;
+    color: white;
+    cursor: pointer;
+}
+
+li button:hover {
+    background-color: #d32f2f;
+}
+
+#mensaje {
+    text-align: center;
+    border-radius: 4px;
+}
+
+footer { /* Pie de pagina*/
+    text-align: center;
+    background-color: #6c5dda;
+    color: white;
+    padding: 10px;
+    font-family: 'Times New Roman', Times, serif;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
